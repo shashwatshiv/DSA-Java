@@ -16,7 +16,9 @@ public class PrefixSumMethod {
         // for loop to select first element
         for (int i = 0; i < prefixSum.length; i++) {
             // for loop to select second element
+            // second element should not not be less than i, otherwise -ve prefix sum
             for (int j = i; j < prefixSum.length; j++) {
+                // when i = =0, j = 0 , the difference is output zero all the time , which is wrong result
                 if (i ==0){
                     sum = prefixSum[j];
                 }
