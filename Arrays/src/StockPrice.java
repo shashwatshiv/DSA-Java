@@ -1,8 +1,9 @@
 public class StockPrice {
     public static void main(String[] args) {
-        int[] arr = {7,1,5,3,6,4};
-//        System.out.println(maxProfit(arr));
+        int[] arr = {7,1,5,3,0,4};
+        System.out.println(maxProfit(arr));
         System.out.println(maxProfit2(arr));
+        System.out.println(maxProfit3(arr));
     }
     // Brute Force Method , Time Complexity O(n^2)
     public static int maxProfit(int[] arr){
@@ -31,5 +32,19 @@ public class StockPrice {
             if (profit > profitMax) profitMax = profit;
         }
         return  profitMax;
+    }
+    public static int maxProfit3(int[] arr){
+        int buyPrice =Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int i = 0; i < arr.length; i++) {
+if (buyPrice< arr[i]) {
+ int profit = arr[i] - buyPrice;
+ maxProfit = Math.max(maxProfit,profit);
+}
+else {
+    buyPrice = arr[i];
+}
+        }
+        return maxProfit;
     }
 }
