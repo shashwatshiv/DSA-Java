@@ -5,6 +5,7 @@ public class pairInArray {
  }
 
      static void pair(int[] arr) {
+
      // for loop to choose first element of pair
          for (int i = 0; i < arr.length; i++) {
              // for loop to choose second element of array
