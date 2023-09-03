@@ -1,6 +1,6 @@
 public class StockPrice {
     public static void main(String[] args) {
-        int[] arr = {7,1,5,3,0,4};
+        int[] arr = {7,2,10,3,0,4};
         System.out.println(maxProfit(arr));
         System.out.println(maxProfit2(arr));
         System.out.println(maxProfit3(arr));
@@ -37,7 +37,7 @@ public class StockPrice {
         int buyPrice =Integer.MAX_VALUE;
         int maxProfit = 0;
         for (int i = 0; i < arr.length; i++) {
-if (buyPrice< arr[i]) {
+if (arr[i] > buyPrice) {
  int profit = arr[i] - buyPrice;
  maxProfit = Math.max(maxProfit,profit);
 }

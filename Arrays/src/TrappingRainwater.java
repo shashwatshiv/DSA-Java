@@ -1,7 +1,7 @@
 import java.util.*;
 public class TrappingRainwater {
     public static void main(String[] args){
-        int[] arr ={4,2,0,6,3,2,5};
+        int[] arr ={4,2,1,0,3,0,2,3};
         trapWater(arr);
     }
     public static void trapWater(int[] arr){
@@ -27,5 +27,6 @@ int n = arr.length;
             trappedRainwater += waterLevel - arr[i];
         }
         System.out.println(trappedRainwater);
+        System.out.println(Arrays.toString(maxRight));
     }
 }
