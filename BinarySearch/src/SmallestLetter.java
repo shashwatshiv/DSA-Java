@@ -1,7 +1,7 @@
 public class SmallestLetter {
     public static void main(String[] args) {
       char[] letters = {'c','f','j','m'};
-        System.out.println(Letter(letters,'c'));
+        System.out.println(Letter(letters,'e'));
 
     }
   public static char Letter( char[] letters , char target) {

@@ -2,7 +2,7 @@ public class CeilingFloorFunction {
     public static void main(String[] args){
         int[] arr ={1,3,7,9,23,34,37,56,58,78,96,99};
         System.out.println(Ceiling(arr,4));
-        System.out.println(Floor(arr, 95));
+        System.out.println(Floor(arr, 55));
     }
         static int Ceiling (int[]arr , int target){
         int start =0;
@@ -37,4 +37,4 @@ public class CeilingFloorFunction {
         }
         return arr[end];
         }
-}
+    }
