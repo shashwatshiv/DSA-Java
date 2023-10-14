@@ -20,7 +20,7 @@ public class CountingSort {
         for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
-        // Sorting
+        // sorting
         int j =0;
         for (int i = 0; i < count.length; i++) {
             while(count[i]>0){
@@ -28,8 +28,6 @@ public class CountingSort {
             j++;
             count[i]--;
             }
-
         }
-
     }
 }
