@@ -3,13 +3,15 @@ import java.util.*;
 class Main {
     public static void main (String[] args){
         System.out.println("Hello World");
-      int ans =  func1(8);
-      System.out.println(ans);
-      System.out.println("Function 2");
-      func2(5);
-      System.out.println("factorial");
-      int fact = factorial(4,1);
-      System.out.println(fact);
+//      int ans =  func1(8);
+//      System.out.println(ans);
+//      System.out.println("Function 2");
+//      func2(5);
+//      System.out.println("factorial");
+//      int fact = factorial(4,1);
+//      System.out.println(fact);
+tail(5,1);
+        System.out.println(factorialTail(5,1));
     }
      static void func3(int n){
          if (n==0)
@@ -29,10 +31,16 @@ class Main {
         
     }
 
-    static int factorial(int n, int k){
-        if (n==0) return k;
-
-        return factorial(n-1, n*k);
+    static void tail(int n,int k){
+        if (n==0) return;
+        System.out.println(k);
+        tail(n-1,k+1);
+    }
+    static int factorialTail(int n, int k){
+        if( n ==0 || n==1){
+            return k;
+        }
+        return factorialTail(n-1,k*n);
 
     }
 }
