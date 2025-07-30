@@ -3,6 +3,10 @@ import java.util.Arrays;
 public class printingArray {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        int[] ar1r = new int[1200];
+        char one = 'a';
+        System.out.println(Character.getNumericValue(one));
+
         // Array
         int[] arr ={4,5,9,3,89,68};
         int[] arr2 ={41,53,91,36,89,68};

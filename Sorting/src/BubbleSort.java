@@ -1,5 +1,5 @@
 import java.util.*;
-public class BubbleSort {
+public class  BubbleSort {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         int[] arr = {1,2,3};
@@ -21,7 +21,7 @@ public class BubbleSort {
                 }
             }
             if (!swapped){
-                break;
+     break;
             }
         }
     }
