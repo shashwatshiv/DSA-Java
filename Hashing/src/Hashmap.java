@@ -27,11 +27,9 @@ public class Hashmap{
         System.out.println(map);
         map.put("india",45);
         System.out.println(map);
+        System.out.println(map.put("russia",38));
         System.out.println(map.containsKey("India".toLowerCase()));
-        int[] nums = {1,2,3,4,5,5};
-        for (int num:nums){
-        System.out.println(num);
-        }
+
         for (Map.Entry<String,Integer> e : map.entrySet()){
             System.out.println(e.getKey());
             System.out.println(e.getValue());
